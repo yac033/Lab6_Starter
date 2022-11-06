@@ -104,7 +104,6 @@ function initFormHandler() {
   })
 
   let ClearButtonEl = formEl.getElementsByTagName("button")[1];
-  console.log(ClearButtonEl);
   ClearButtonEl.addEventListener('click',(event)=>{
     saveRecipesToStorage([]);
     let SelectMain = document.querySelector('main');
