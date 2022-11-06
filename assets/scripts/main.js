@@ -107,7 +107,11 @@ function initFormHandler() {
   ClearButtonEl.addEventListener('click',(event)=>{
     saveRecipesToStorage([]);
     let SelectMain = document.querySelector('main');
-    SelectMain.remove();
+    if(SelectMain.querySelector('recipe-card') == null){
+      
+    }else{
+      SelectMain.querySelector('recipe-card').remove();
+    }
   })
   // Steps B4-B9 will occur inside the event listener from step B3
   // B4. TODO - Create a new FormData object from the <form> element reference above
